@@ -16,7 +16,7 @@ export default defineConfig({
   },
   media: {
     tina: {
-      mediaRoot: "uploads",
+      mediaRoot: "images",
       publicFolder: "static",
     },
   },
@@ -49,6 +49,53 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
+          },
+        ],
+      },
+      {
+        name: "page",
+        label: "Pages",
+        path: "content",
+        fields: [
+          {
+            type: "image",
+            name: "bg_image",
+            label: "background image",
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "description",
+            isTitle: false,
+            required: false,
+          },
+
+          {
+            type: "datetime",
+            label: "Date",
+            name: "date",
+          },
+          {
+            type: "boolean",
+            name: "draft",
+            label: "Draft",
+          },
+          {
+            type: "rich-text",
+            name: "content",
+            label: "Body",
+          },
+          {
+            type: "image",
+            name: "image",
+            label: "image",
           },
         ],
       },

@@ -1,0 +1,35 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Mission"
+url = "mission/"
+weight = 2
+
+[[main]]
+weight = 3
+name = "Programs"
+hasChildren = true
+
+  [[main]]
+  parent = "Programs"
+  name = "Veteran Leaders"
+  url = "veteran-leaders/"
+  weight = 1
+
+  [[main]]
+  parent = "Programs"
+  name = "IDD"
+  url = "idd/"
+  weight = 2
+
+  [[main]]
+  parent = "Programs"
+  name = "Youth"
+  url = "youth/"
+  weight = 3
